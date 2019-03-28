@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>弹窗插件</title>
+    <link rel="stylesheet" href="domeself.css">
+    <style type="text/css">
+        #slefClose{
+            text-align: end;
+            margin: .1rem .1rem auto auto;
+        }
+    </style>
+</head>
+<body>
+    <button id="domeself">点击出现弹窗</button>
+    <p>000</p>
+    <p>000</p>
+    <p>0005444444444444444444444444444444444444444444444444445555555555555</p>
+    <p>000</p>
+    <p>00044444444444444444444444444444444444444444444444444</p>
+    <p>000</p> <p>000</p>
+
+    <script type="text/javascript" src="domeself.js"></script>
+    <script>
+
+            document.getElementById('domeself').onclick = function () {
+                let pop = new selfWindow();
+                console.log(pop.__proto__.options)
+                pop.init({
+                    id: "domeself",
+                    selfTitle: "自定义标题",
+                    selfInfo: "自定义信息哥哥哥哥哥哥哥哥哥哥过过过过过过过过过过过过过过过过过过过过过过过过过过过过过过过过过过过过过过过过过过过过过过过过过过过过过过",
+                    selfOk: "确定",//自定义确定按钮文字
+                    selfNo: "取消",//自定义否认按钮文字
+                    slefClose: '关闭'
+                });
+            }
+
+    </script>
+
+</body>
+</html>

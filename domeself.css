@@ -1,0 +1,62 @@
+html, body, div, video,span, iframe, h1, h2, h3, h4, p, a, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup,tt,textarea, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video,input{
+    margin:0;
+    padding:0;
+    border:0;
+    list-style:none;
+    font-style: normal;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-weight: 500;
+}
+html,body{
+    font-size: calc(100*(100vw/640));
+    font-size: -webkit-calc(100*(100vw/640));
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    -webkit-text-size-adjust:none;
+}
+a,a:hover,u{text-decoration: none;}
+img{display: block;margin: 0 auto;width: 100%;}
+/*初始化结束*/
+body{
+    font-size: .22rem;
+}
+#selfBack{
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 999;
+    font-size: .22rem;
+}
+#selfWinsow{
+    width: 90%;
+    margin: .2rem auto;
+    background-color: #fff;
+    border-radius: .1rem;
+    position: relative;
+}
+#slefTitle{
+    text-align: center;
+}
+#selInfo{
+    text-align: center;
+    margin: .2rem auto;
+}
+.selfBtDouble{
+    width: 50%;
+    text-align: center;
+}
+#selfOk{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-bottom-right-radius: .1rem;
+    color: darkorange;
+}
+#selfNo{
+    border-top: 1px solid #000;
+    border-bottom-left-radius: .1rem;
+}
